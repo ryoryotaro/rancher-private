@@ -1,5 +1,4 @@
 name: Rancher-LB
-description: |
-  Load Balancer based HAProxy
+description: "Load Balancer based HAProxy"
 version: v0.1
-category: Load Balancing
+category: "Load Balancing"

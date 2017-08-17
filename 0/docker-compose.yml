@@ -1,4 +1,4 @@
-version: '1'
+version: '2'
 services:
   external:
     image: rancher/lb-service-haproxy:v0.7.5
