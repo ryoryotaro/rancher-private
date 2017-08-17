@@ -1,11 +1,13 @@
 version: '2'
 services:
-  nginx:
-    labels:
-      io.rancher.container.hostname_override: container_name
+  external:
+    image: rancher/lb-service-haproxy:v0.7.6
     ports:
     - 80:80/tcp
-    tty: true
-    image: nginx:1.10
-    stdin_open: true
-
+    - 443:443/tcp
+    - 2222:2222/tcp
+    labels:
+      io.rancher.container.agent.role: environmentAdmin
+      io.rancher.container.create_agent: 'true'
+      io.rancher.container.hostname_override: container_name
+      io.rancher.scheduler.global: 'true'
