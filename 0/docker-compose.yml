@@ -1,7 +1,7 @@
 version: '2'
 services:
   external:
-    image: rancher/lb-service-haproxy:v0.7.5
+    image: rancher/lb-service-haproxy:v0.7.6
     ports:
     - 80:80/tcp
     - 443:443/tcp
