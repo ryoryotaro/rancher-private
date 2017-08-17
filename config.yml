@@ -1,4 +1,4 @@
-name: Rancher-LB
-description: "Load Balancer based HAProxy"
+name: Nginx
+description: "Test"
 version: v0.1
-category: "Load Balancing"
+category: "Web Apps"
