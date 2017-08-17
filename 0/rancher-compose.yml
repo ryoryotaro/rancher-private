@@ -1,4 +1,8 @@
 version: '2'
+catalog:
+  name: "Rancher-LB"
+  version: "v0.1"
+  description: "test"
 services:
   external:
     scale: 1
